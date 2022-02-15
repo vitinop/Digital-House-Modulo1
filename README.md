@@ -3,9 +3,9 @@
 <h3 align="center">Projeto final - Ficção Interativa</h2>
 
 
-  <h2 align="justify">&emsp;Módulo I </h2> 🎓
-<p align="justify">&emsp;->Nesse repósitorio você encontrará todas atividades  relativas as seguintes matérias : </p>
-  <ul align="justify">&emsp;
+  <h2 align="justify"> Módulo I 🎓 </h2> 
+<p align="justify"> Nesse repósitorio você encontrará todas atividades  relativas as seguintes matérias : </p>
+  <ul align="justify">
 <li>Lógica de programação - Programação Imperativa</li>
 <li>Front End - Modulo 1 </li>
 <li>Banco de Dados - Modulo 1</li>
