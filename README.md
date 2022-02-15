@@ -12,8 +12,7 @@
 <li>Introdução a Informatica</li>
 <li>Metodologias Ágeis</li>
 </ul>
---
-<p align="center"><img src="https://media3.giphy.com/media/1TmIsDWBPyxTuSOn2B/giphy.gif?cid=790b761141b1e094df16784b71824a7634c4e6ccbc0d6888&rid=giphy.gif&ct=s" alt="digitalHouse.gif" /></p>
+<img src="https://media3.giphy.com/media/1TmIsDWBPyxTuSOn2B/giphy.gif?cid=790b761141b1e094df16784b71824a7634c4e6ccbc0d6888&rid=giphy.gif&ct=s" alt="digitalHouse.gif"  align="center"/>
 
 
 
