@@ -29,7 +29,6 @@ imc3= peso3/altura3**2
 imc4= peso4/altura4**2
 
 console.log("O paciente" + nome1 +" com peso de" + peso1+" e altura de "+ altura1+", possui IMC equivalente a : "+ imc1)
-
 console.log("O paciente" + nome2 +" com peso de" + peso2+" e altura de "+ altura2+", possui IMC equivalente a : "+ imc2)
 console.log("O paciente" + nome3 +" com peso de" + peso3+" e altura de "+ altura3+", possui IMC equivalente a : "+ imc3)
 console.log("O paciente" + nome4 +" com peso de" + peso4+" e altura de "+ altura4+", possui IMC equivalente a : "+ imc4)
