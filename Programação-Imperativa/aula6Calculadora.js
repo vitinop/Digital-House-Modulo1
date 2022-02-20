@@ -66,3 +66,6 @@ function geradorDePorcentagem(valorRelativo, valorBase) {
 console.log(geradorDePorcentagem(2,200));
 console.log(geradorDePorcentagem(100,100));
 
+
+
+
