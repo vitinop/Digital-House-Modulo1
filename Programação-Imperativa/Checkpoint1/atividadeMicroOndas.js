@@ -29,44 +29,44 @@ if (prato === 1) {
   tempoPadrao = 10;
   console.log(
     "O prato selecionado foi Pipoca e o tempo padrão é :" +
-      tempoPadrao +
-      " segundos"
+    tempoPadrao +
+    " segundos"
   );
   const decisao = +prompt(
     "Gostaria de modifica o tempo padrão? Digite S ou N "
   );
-  if (decisao === "N") console.log("Prato pronto, bom apetite!!!");
-  else if (decisao === "S") {
+  if (decisao === "N") {
+    console.log("Prato pronto, bom apetite!!!")
+  }
+  if (decisao === "S") {{
     novoTempo = +prompt(
       "Insira quantos segundos você gostaria para o prato desejado"
     );
   }
-  if (tempoPadrao > novoTempo) {
-    // Novo tempo menor que o tempo padrão
-    console.log("Tempo insuficiente, a comida está fria !");
-  } 
-  else if (novoTempo >= tempoPadrao * 2) {
-    // Se o tempo informado for maior que 2x o necessário, exibir mensagem que a comida queimou.
-    console.log("A Comida queimou !");
-  } 
-  else if (novoTempo >= tempoPadrao * 3)
-    console.log("Parabens você ateou fogo no seu apartamento !");
-  else console.log("Prato pronto, bom apetite!!!");
+    if (tempoPadrao > novoTempo) {
+      // Novo tempo menor que o tempo padrão
+      console.log("Tempo insuficiente, a comida está fria !");
+    } else if (novoTempo >= tempoPadrao * 2) {
+      // Se o tempo informado for maior que 2x o necessário, exibir mensagem que a comida queimou.
+      console.log("A Comida queimou !");
+    } else if (novoTempo >= tempoPadrao * 3)
+      console.log("Parabens você ateou fogo no seu apartamento !");
+    else console.log("Prato pronto, bom apetite!!!");
+  }
 }
-
-//
-// if( prato === 2){
-//     time=8
-// }
-// if( prato === 3){
-//     time=15
-// }
-// if( prato === 4){
-//     time=12
-// }
-// if( prato === 5){
-//     time=8
-// }
-else {
-  console.log("Prato inexistente");
-}
+  //
+  // if( prato === 2){
+  //     time=8
+  // }
+  // if( prato === 3){
+  //     time=15
+  // }
+  // if( prato === 4){
+  //     time=12
+  // }
+  // if( prato === 5){
+  //     time=8
+  // }
+  else {
+    console.log("Prato inexistente");
+  }
