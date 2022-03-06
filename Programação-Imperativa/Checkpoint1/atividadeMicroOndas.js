@@ -14,59 +14,110 @@
 // - Se o tempo for 3x maior que o necessário para o prato, o microondas deve exibir a mensagem: “kabumm”;
 // - No final de cada tarefa, o microondas deverá exibir a mensagem: "Prato pronto, bom apetite!!!".
 
-const prompt = require("prompt-sync")();
 
-let tempoPadrao = 0;
-let novoTempo = 0;
-console.log(
-  "Lista de pratos\n1 - Pipoca;\n2 - Macarrão;\n3 - Carne;\n4 - Feijão;\n5 - Brigadeiro"
-);
-let prato = +prompt(
-  "Qual prato você gostaria de cozinhar? Insira o Numero do Prato:"
-);
+const microondas = (prato, tempo) => {
+  if (typeof prato != 'string' && typeof b != 'number') {
+      return "Por favor, digite o nome de um prato e um numero"
+  }
+  else if (prato == "pipoca" && tempo == 10) {
+      return "Prato pronto, bom apetite"
+  }
+  else if (prato == "pipoca" && tempo <= 5) {
+      return "Tempo insuficiente"
+  }
+  else if (prato == "pipoca" && tempo == 20) {
+      return "Seu prato queimou"
+  }
+  else if (prato == "pipoca" && tempo >= 30) {
+      return "Kabuuuuum, ta doido rapá??"
+  }
+  else if(prato == "pipoca" && tempo > 10 && tempo < 20){
+      return "Ta quase queimando??"
+  }
+  else if(prato == "pipoca" && tempo > 20 && tempo < 30){
+      return "Ta pra explodir doido??"
+  }
+  // If do macarrão
 
-if (prato === 1) {
-  tempoPadrao = 10;
-  console.log(
-    "O prato selecionado foi Pipoca e o tempo padrão é :" +
-    tempoPadrao +
-    " segundos"
-  );
-  const decisao = +prompt(
-    "Gostaria de modifica o tempo padrão? Digite S ou N "
-  );
-  if (decisao === "N") {
-    console.log("Prato pronto, bom apetite!!!")
+  else if (prato == "macarrao" && tempo == 8) {
+      return "Prato pronto, bom apetite"
+  }   
+  else if (prato == "macarrao" && tempo <= 7) {
+      return "Tempo insuficiente"
   }
-  if (decisao === "S") {{
-    novoTempo = +prompt(
-      "Insira quantos segundos você gostaria para o prato desejado"
-    );
+  else if (prato == "macarrao" && tempo == 16) {
+      return "Seu prato queimou"
   }
-    if (tempoPadrao > novoTempo) {
-      // Novo tempo menor que o tempo padrão
-      console.log("Tempo insuficiente, a comida está fria !");
-    } else if (novoTempo >= tempoPadrao * 2) {
-      // Se o tempo informado for maior que 2x o necessário, exibir mensagem que a comida queimou.
-      console.log("A Comida queimou !");
-    } else if (novoTempo >= tempoPadrao * 3)
-      console.log("Parabens você ateou fogo no seu apartamento !");
-    else console.log("Prato pronto, bom apetite!!!");
+  else if (prato == "macarrao" && tempo >= 24) {
+      return "Kabuuuuum, ta doido rapá??"
+  }
+  else if(prato == "macarrao" && tempo > 8 && tempo <16){
+      return "Ta quase queimando??"
+  }
+  else if(prato == "macarrao" && tempo > 16 && tempo < 24){
+      return "Ta pra explodir doido??"
+  }
+  // if da carne
+
+  else if(prato == "carne" && tempo == 15) {
+      return "Prato pronto, bom apetite"
+  }
+  else if(prato == "carne" && tempo <= 14){
+      return "Tempo insuficiente"
+  }
+  else if(prato == "carne" && tempo == 30){
+      return "Seu prato queimou"
+  }
+  else if(prato == "carne" && tempo >= 45){
+      return "Kabuuuuum, ta doido rapá??"
+  }
+  else if(prato == "carne" && tempo > 15 && tempo < 30){
+      return "Ta quase queimando??"
+  }
+  else if(prato == "carne" && tempo > 30 && tempo < 45){
+      return "Ta pra explodir doido??"
+  }
+  // if do feijão
+
+  else if(prato == "feijao" && tempo == 12) {
+      return "Prato pronto, bom apetite"
+  }
+  else if(prato == "feijao" && tempo <= 11){
+      return "Tempo insuficiente"
+  }
+  else if(prato == "feijao" && tempo == 24){
+      return "Seu prato queimou"
+  }
+  else if(prato == "feijao" && tempo >= 36){
+      return "Kabuuuuum, ta doido rapá??"
+  }
+  else if(prato == "feijao" && tempo > 12 && tempo <24){
+      return "Ta quase queimando??"
+  }
+  else if(prato == "feijao" && tempo > 24 && tempo < 36){
+      return "Ta pra explodir doido??"
+  }
+  // if do brigadeiro
+
+  else if(prato == "brigadeiro" && tempo == 8) {
+      return "Prato pronto, bom apetite"
+  }
+  else if(prato == "brigadeiro" && tempo <= 7){
+      return "Tempo insuficiente"
+  }
+  else if(prato == "brigadeiro" && tempo == 16){
+      return "Seu prato queimou"
+  }
+  else if(prato == "brigadeiro" && tempo >= 24){
+      return "Kabuuuuum, ta doido rapá??"
+  }
+  else if(prato == "brigadeiro" && tempo > 8 && tempo <16){
+      return "Ta quase queimando??"
+  }
+  else if(prato == "brigadeiro" && tempo > 16 && tempo < 24){
+      return "Ta pra explodir doido??"
   }
 }
-  //
-  // if( prato === 2){
-  //     time=8
-  // }
-  // if( prato === 3){
-  //     time=15
-  // }
-  // if( prato === 4){
-  //     time=12
-  // }
-  // if( prato === 5){
-  //     time=8
-  // }
-  else {
-    console.log("Prato inexistente");
-  }
+
+console.log(microondas("brigadeiro", 16))
+console.log(microondas("macarrao", 30))
