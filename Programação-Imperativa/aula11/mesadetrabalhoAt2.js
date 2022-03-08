@@ -15,9 +15,9 @@ function imprimirInverso()
 imprimirInverso()
 
 
-function iventerInverso(){
+function novoArrayInverso(){
     let novoArray= arrayInicial.reverse()
     console.log( novoArray)
 }
 
-iventerInverso()
+novoArrayInverso()
