@@ -26,6 +26,7 @@ body{
 .principal{
     background-color: white;
     display: flex;
+    justify-content: center;
     flex-direction: row;
 }
 
