@@ -15,22 +15,28 @@ body {
     font-weight: bold;
 }
 
+.headerLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.headerLogo img {
+    padding: 20px;
+
+}
+
 .mainHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100px;
     background-color: #222;
 }
 
-.mainHeader h1 {
-    padding: 36px 0 36px 122px;
-}
 
-.mainHeader ul {
-    padding: 36px 0 36px 122px;
-}
 
 .mainHeader ul li {
     padding-left: 10px;
@@ -159,13 +165,6 @@ a {
 }
 
 
-.genericFooter h1 {
-    padding: 36px 40px 36px 122px;
-}
-
-.genericFooter ul {
-    padding: 36px 0 36px 122px;
-}
 .genericFooter ul :hover {
     color: #39b24a;
     transition: 0.3s;
@@ -179,5 +178,21 @@ a {
     font-weight: 400;
     height: 19px;
     margin-bottom: 10px;
+
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 36px;
+}
+
+.footerLogo img {
+    padding: 20px;
+}
+
+.footerMenu {
+    padding-left: 40px;
 
 }
