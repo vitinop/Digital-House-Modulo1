@@ -8,14 +8,14 @@
 // Comparar elementos de um array com os elementos de outro. 
 
 
-let numbers =[22, 33, 54, 66, 72]
-console.log(numbers[numbers.length])
+let numbers =[22, 33, 54, 66, 72];
+console.log(numbers[numbers.length]);
 
 //  O resultado do console será : undefinied
 
 
-let grupoDeAmigos = [ ["Harry", "Ron", "Hermione"], ["Spiderman", "Hulk", "Ironman"], ["Penélope Glamour", "Pierre Nodoyuna","Patán"] ]
-console.log(grupoDeAmigos[1][0])
+let grupoDeAmigos = [ ["Harry", "Ron", "Hermione"], ["Spiderman", "Hulk", "Ironman"], ["Penélope Glamour", "Pierre Nodoyuna","Patán"] ];
+console.log(grupoDeAmigos[1][0]);
 
 //  O resultado do console será : Spiderman
 
