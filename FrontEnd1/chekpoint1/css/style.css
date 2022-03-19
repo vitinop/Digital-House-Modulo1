@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 * {
   padding: 0;
@@ -46,9 +47,11 @@ a {
   width: 150px;
   height: 150px;
 }
+
 .navMenu a {
   text-decoration: none;
 }
+
 .navMenu ul li {
   font-size: 26px;
   padding-left: 10px;
@@ -56,7 +59,8 @@ a {
   display: inline-block;
   list-style-type: none;
 }
-.navMenu ul li :hover{
+
+.navMenu ul li :hover {
   color: #e5e5e5;
   transition: var(--transition-time);
 }
@@ -114,7 +118,7 @@ a {
   text-decoration: none;
 }
 
-.textCard{
+.textCard {
   padding: 1em;
   text-align: left;
   z-index: 10;
@@ -134,10 +138,11 @@ a {
   line-height: 2em;
   display: none;
 
-  
 
-  
+
+
 }
+
 /* Animações / transição de texto */
 .overlayCard {
   position: absolute;
@@ -147,31 +152,36 @@ a {
   transition: all 0.250s ease-in-out;
   z-index: 9;
 }
-.card:hover p{
- display: block;
+
+.card:hover p {
+  display: block;
   animation: 2s anim-lineUp ease-out;
 }
+
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
     transform: translateY(80%);
   }
+
   20% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
     transform: translateY(0%);
   }
 
 }
-.card:hover h1{
- 
-   animation: 2s anim-lineUp ease-out;
- }
+
+.card:hover h1 {
+
+  animation: 2s anim-lineUp ease-out;
+}
 
 
-.card:hover .overlayCard{
+.card:hover .overlayCard {
   background-color: rgba(0, 0, 0, 0.5);
 
 }
@@ -185,14 +195,22 @@ a {
   align-items: center;
   flex-direction: column;
   padding: 24px;
+
 }
-.videoSection h1{
+
+.videoSection h1 {
+  font-size: 4.5em;
+  line-height: 1.2em;
   padding: 12px;
+  font-weight: lighter;
+  font-family: 'Great Vibes', cursive;
 }
+
 .videoSection iframe {
+  margin: 28px;
   width: 55vw;
   height: 30vw;
- 
+  box-shadow: 0 0 5em -1em black;
 }
 
 /* Inicio da configuração do footer */
