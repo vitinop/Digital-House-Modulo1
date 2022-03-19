@@ -137,10 +137,6 @@ a {
   margin-top: 0.5em;
   line-height: 2em;
   display: none;
-
-
-
-
 }
 
 /* Animações / transição de texto */
@@ -155,6 +151,11 @@ a {
 
 .card:hover p {
   display: block;
+
+  animation: 2s anim-lineUp ease-in-out;
+}
+
+.card:hover h1 {
   animation: 2s anim-lineUp ease-out;
 }
 
@@ -173,13 +174,12 @@ a {
     transform: translateY(0%);
   }
 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
 }
-
-.card:hover h1 {
-
-  animation: 2s anim-lineUp ease-out;
-}
-
 
 .card:hover .overlayCard {
   background-color: rgba(0, 0, 0, 0.5);
