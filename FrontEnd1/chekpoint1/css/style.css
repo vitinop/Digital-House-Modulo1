@@ -30,7 +30,6 @@ a {
 }
 
 
-
 /* Inicio de configuração de estilo do Header */
 .mainHeader {
   display: flex;
@@ -121,6 +120,7 @@ a {
   text-align: left;
   z-index: 999;
 }
+
 .textCard h1 {
   margin: 0;
   font-size: 1.5em;
@@ -148,31 +148,6 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
  
 }
-
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 1285px) {
-  .cards-wrapper {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .cards-wrapper {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .cards-wrapper {
-    padding: 4rem 2rem;
-  }
-
-  .card {
-    max-width: calc(100vw - 4rem);
-  }
-}
-
 
 .videoSection {
   min-width: 100%;
@@ -214,4 +189,28 @@ a {
 
 .socialMidia img:hover {
   transform: scale(1.2)
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+
+  .card {
+    max-width: calc(100vw - 4rem);
+  }
 }
