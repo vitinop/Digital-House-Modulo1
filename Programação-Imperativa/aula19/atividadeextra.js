@@ -31,5 +31,22 @@ function propriedadeUnica(nome) {
   }
   console.log("Aluno não encontrado");
 }
+////// segunda resolução 
 
-propriedadeUnica("Zezé")
+let  propriedadeUnica = {
+    filtrarPorNome(nome) {
+        for (let i = 0; i < alunos.length; i++) {
+            let arrayFiltroNome
+            arrayFiltroNome.push = alunos.nome[i];     
+        }
+    },
+    filtrarPorSerie(anoLetivo) {
+        for (let i = 0; i < alunos.length; i++) {
+            let arrayFiltroAnoLetivo
+            arrayFiltroAnoLetivo.push =alunos.anoLetivo[i];     
+        }
+    }
+    
+}
+
+
