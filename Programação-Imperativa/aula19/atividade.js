@@ -1,3 +1,10 @@
+// Victor Luz 
+// Matheus Emanuel 
+// Anderson Borges 
+// Natashy Iwamoto
+// Luanderson Silva
+// Tony Jonas 
+// Werlon Lima
 
 //função construtora do objeto cliente 
 function CriarCliente(nome,numero,tipo,saldo) {
@@ -33,6 +40,7 @@ console.log(contas)
        console.log(this.clientes[i]);
      }
    },
+
    consultarCliente(nome){
     for(let i = 0; i < this.clientes.length ; i++){
       const cliente = this.clientes[i];
@@ -45,22 +53,24 @@ console.log(contas)
     console.log ("Cliente não encontrado");
   },
 
-  adicionarSaldoCliente(nome,valorDepositado){
-    consultarCliente(nome)
+  depositoCliente(nome,valorDepositado){
+    const cliente=this.consultarCliente(nome);
     cliente.saldo=cliente.saldo+valorDepositado
 
     console.log(`Depósito realizado, seu novo saldo é:" ${cliente.saldo}`) 
-    }
+    },
+  saqueCliente(nome,valorSacado){
+    const cliente=this.consultarCliente(nome);
+    cliente.saldo=cliente.saldo-valorSacado
+
+    console.log(`Saque realizado, seu novo saldo é:" ${cliente.saldo}`) 
+    },
+    
+
+    
  };
 
 banco.consultarCliente('Jacki Shurmer')
-banco.adicionarSaldoCliente('Jacki Shurmer')
+banco.depositoCliente('Jacki Shurmer',1111)
+banco.saqueCliente('Jacki Shurmer',99999)
 
-
-
-// Victor Luz 
-// Matheus Emanuel 
-// Anderson Borges 
-// Natashy Iwamoto
-// Luanderson Silva
-// Tony Jonas 
