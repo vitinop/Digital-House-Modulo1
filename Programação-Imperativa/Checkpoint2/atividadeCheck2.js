@@ -108,7 +108,6 @@ consultaAlunoAprovacao: function(aluno){
 
 console.log(curso.criarAluno("Messi", 0, [10, 7, 8, 9]));
 
-
 console.log(curso.resultadoBoleanAluno());
 
 
